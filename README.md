@@ -1,0 +1,2 @@
+# Simple CORS proxy
+I use this for my static sites in which I want to use results of third party api calls. If the responses from those third parties do not set the proper CORS headers set, browsers will otherwise block my frontend code from using the response bodies because of same origin policy. I run this proxy code on a CloudFlare worker, which makes the request, and then returns the response with the proper CORS headers.
